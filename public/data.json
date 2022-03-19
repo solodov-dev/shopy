@@ -5,7 +5,7 @@
         "id": 1,
         "purchaseDate": "2022-01-04T13:33:03.969Z",
         "product": "Chockolate",
-        "store": "Coop"
+        "store": "Shopify"
       },
       {
         "id": 2,
@@ -17,7 +17,7 @@
         "id": 3,
         "purchaseDate": "2022-02-04T13:33:03.969Z",
         "product": "Bread",
-        "store": "Coop"
+        "store": "Kaubamaja"
       }
     ]
   }
