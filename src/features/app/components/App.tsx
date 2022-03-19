@@ -1,4 +1,4 @@
-import MainMenu from "features/routes/components/routes";
+import MainMenu from "features/routes/components/mainMenu";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -9,11 +9,13 @@ import {
 import Header from "ui/components/header";
 import routes from "features/routes/constants/routes";
 import "../styles/App.css";
+import Logo from "ui/components/logo";
 
 function App() {
   return (
     <Router>
       <Header>
+        <Logo />
         <MainMenu />
       </Header>
       <Routes>

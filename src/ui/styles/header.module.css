@@ -1,2 +1,8 @@
 .header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
 }

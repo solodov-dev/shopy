@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import menu from "../constants/routes";
-import styles from "../styles/menu.module.css";
+import styles from "../styles/mainMenu.module.css";
 
 export default function MainMenu() {
   return (
