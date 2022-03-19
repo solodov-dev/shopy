@@ -1,0 +1,17 @@
+.partners {
+  padding: 1rem;
+  background-color: var(--gray);
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  align-items: center;
+  filter: grayscale(100%);
+  opacity: 30%;
+}
+
+.partners > img {
+  height: 40px;
+}
