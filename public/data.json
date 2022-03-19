@@ -1,0 +1,24 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": 1,
+        "purchaseDate": "2022-01-04T13:33:03.969Z",
+        "product": "Chockolate",
+        "store": "Coop"
+      },
+      {
+        "id": 2,
+        "purchaseDate": "2022-01-06T13:33:03.969Z",
+        "product": "Milk",
+        "store": "Coop"
+      },
+      {
+        "id": 3,
+        "purchaseDate": "2022-02-04T13:33:03.969Z",
+        "product": "Bread",
+        "store": "Coop"
+      }
+    ]
+  }
+}
