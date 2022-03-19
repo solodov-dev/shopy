@@ -19,7 +19,7 @@ function App() {
         <MainMenu />
       </Header>
       <Routes>
-        {routes.map((route) => (
+        {Object.values(routes).map((route) => (
           <Route path={route.path} element={route.element} />
         ))}
         <Route path="*" element={<Navigate to="/" replace />} />

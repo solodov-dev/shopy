@@ -6,9 +6,9 @@ export default function MainMenu() {
   return (
     <nav className={styles.menu}>
       <ul>
-        {menu.map((route) => (
-          <li key={route.path}>
-            <Link to={route.path}>{route.title}</Link>
+        {Object.entries(menu).map(([title, value]) => (
+          <li key={value.path}>
+            <Link to={value.path}>{title}</Link>
           </li>
         ))}
       </ul>
