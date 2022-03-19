@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/hero.module.css";
-import { ReactComponent as Shopping } from "../assets/shopping.svg";
+import { ReactComponent as Shopping } from "ui/assets/shopping.svg";
 import { Routes } from "features/routes/constants/routes";
 import { Link } from "react-router-dom";
 
