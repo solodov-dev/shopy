@@ -1,6 +1,7 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
 import { ReactNode } from "react";
 import objectKeys from "utils/helpers/objectKeys";
+import styles from "../styles/table.module.css";
 
 export type ColumnType<T> = {
   title: string;
@@ -18,7 +19,7 @@ export default function DataTable<T>(props: {
   const [filter, setFilter] = useState<TableFilter<T>>({});
 
   return (
-    <table>
+    <table className={styles.table}>
       <DataHeader columns={props.columns} setFilter={setFilter} />
       <Body columns={props.columns} data={props.data} filter={filter} />
     </table>
@@ -77,7 +78,7 @@ function DataHeader<T>(props: {
       <tr key="tr">
         {props.columns.map((col) => (
           <th key={col.title}>
-            <div>
+            <div className={styles.header}>
               {col.title}
               {col.form?.(props.setFilter)}
             </div>

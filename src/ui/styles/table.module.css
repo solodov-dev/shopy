@@ -1,2 +1,13 @@
-.dataTable {
+.table {
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid var(--primary-color);
+}
+
+.table thead {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
 }

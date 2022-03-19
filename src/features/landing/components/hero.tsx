@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div className={styles.hero}>
-      <section>
+    <section className={styles.hero}>
+      <div>
         <h1>Shoppy</h1>
         <p>All your shopping in one place</p>
-        <Link to={Routes.CART} className={styles.link}>
-          Go shopping
-        </Link>
-      </section>
-      <Shopping className={styles.image} />
-    </div>
+        <div className={styles.link}>
+          <Link to={Routes.CART}>Go shopping</Link>
+        </div>
+      </div>
+      {/* <Shopping className={styles.image} /> */}
+    </section>
   );
 }
