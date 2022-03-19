@@ -3,7 +3,7 @@
 ## Task
 
 - Create a shopping list app that has 3 pages: a landing page, a page for displaying previous shopping list history and a page for adding new items to your shopping list.
-- The landing page should be the default one that should always be a fallback, either when the app is accessed without any page information or when the page specified does not exist.
++ The landing page should be the default one that should always be a fallback, either when the app is accessed without any page information or when the page specified does not exist.
 - The other 2 pages should be loaded lazily.
 - The second page should display the previous shopping history in a table, using a pipe or pipes for parsing server-side mocked data in a sensible manner.
 - The data should be provided as JSON through an Observable and contain the following information: datetime of purchase, name of product, name of store.
