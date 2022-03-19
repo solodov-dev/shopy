@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
-import menu from "../constants/routes";
+import Routes from "../constants/routes";
 import styles from "../styles/mainMenu.module.css";
+
+const menu = {
+  [Routes.HOME]: "home",
+  [Routes.HISTORY]: "history",
+  [Routes.CART]: "cart",
+};
 
 export default function MainMenu() {
   return (
     <nav className={styles.menu}>
       <ul>
-        {Object.entries(menu).map(([title, value]) => (
-          <li key={value.path}>
-            <Link to={value.path}>{title}</Link>
+        {Object.entries(menu).map(([path, title]) => (
+          <li key={path}>
+            <Link to={path}>{title}</Link>
           </li>
         ))}
       </ul>

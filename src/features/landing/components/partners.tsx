@@ -11,7 +11,7 @@ export default function Partners() {
     <section className={styles.partners}>
       <span>Our partners</span>
       {PARTNERS.map((partner) => (
-        <img src={partner} alt={partner} />
+        <img key={partner} src={partner} alt={partner} />
       ))}
     </section>
   );

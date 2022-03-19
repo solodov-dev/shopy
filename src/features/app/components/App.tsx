@@ -1,15 +1,10 @@
 import MainMenu from "features/routes/components/mainMenu";
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Navigate,
-  Route,
-  Routes,
-} from "react-router-dom";
+import React, { Suspense } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "ui/components/header";
-import routes from "features/routes/constants/routes";
 import "../styles/App.css";
 import Logo from "ui/components/logo";
+import Pages from "features/routes/components/appRoutes";
 
 function App() {
   return (
@@ -18,12 +13,9 @@ function App() {
         <Logo />
         <MainMenu />
       </Header>
-      <Routes>
-        {Object.values(routes).map((route) => (
-          <Route path={route.path} element={route.element} />
-        ))}
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <Suspense fallback="fallback">
+        <Pages />
+      </Suspense>
     </Router>
   );
 }
