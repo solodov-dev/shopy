@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--secondary-color);
 }
 
 ul {
@@ -24,8 +24,9 @@ ul {
 }
 
 :root {
-  --primary-color: #0a3460;
-  --secondary: #3c8ee2;
+  --primary-color: #34c279;
+  --secondary-color: #3c8ee2;
   --white: #fff;
   --black: #000000;
+  --gray: #e2e1e1;
 }
