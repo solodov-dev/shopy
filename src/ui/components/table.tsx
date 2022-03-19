@@ -32,6 +32,15 @@ function filterData<T>(data: T, filter: TableFilter<T>) {
       if (!new RegExp(filter[key], "i").test(data[key] as unknown as string)) {
         return;
       }
+    } else if (filter[key] && data[key] instanceof Date) {
+      if (
+        !(
+          (data[key] as unknown as Date).toDateString() ===
+          (filter[key] as unknown as Date).toDateString()
+        )
+      ) {
+        return;
+      }
     }
   }
   return data;
@@ -48,8 +57,8 @@ function Body<T>(props: {
         .filter((value) => filterData(value, props.filter))
         .map((dataItem, index) => (
           <tr key={index}>
-            {props.columns.map((col, index) => (
-              <td>
+            {props.columns.map((col) => (
+              <td key={col.title}>
                 {col.render ? col.render(dataItem) : dataItem[col.dataIndex]}
               </td>
             ))}

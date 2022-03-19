@@ -18,7 +18,18 @@ const historyTableColumns: ColumnType<ShoppingItem>[] = [
     title: "Date of purchase",
     dataIndex: "purchaseDate",
     render: (data) => data.purchaseDate.toLocaleDateString(),
-    form: () => <input placeholder="Filter by date" type="date" />,
+    form: (setFilter) => (
+      <input
+        placeholder="Filter by date"
+        type="date"
+        onChange={(e) =>
+          setFilter((prev) => ({
+            ...prev,
+            purchaseDate: e.target.value ? new Date(e.target.value) : "",
+          }))
+        }
+      />
+    ),
   },
   {
     title: "Store",
