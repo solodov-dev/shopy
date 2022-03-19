@@ -6,7 +6,7 @@ export default function useObservable<T>(observable: Observable<T>) {
 
   useEffect(() => {
     const subscription = observable.subscribe(setData);
-    return subscription.unsubscribe();
+    return () => subscription.unsubscribe();
   }, [observable]);
 
   return data;
