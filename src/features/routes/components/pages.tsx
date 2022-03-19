@@ -1,22 +1,17 @@
-import Home from "pages/components/home";
+import getItems from "features/history/model/getItems";
+import Home from "features/landing/components/home";
 import React from "react";
 import { Route, Routes as BrowserRoutes, Navigate } from "react-router-dom";
-import { map } from "rxjs";
-import { ajax } from "rxjs/ajax";
 import useObservable from "utils/hooks/useObservable";
 import Routes from "../constants/routes";
 
 const HistoryComponent = React.lazy(
   () => import("features/history/components/history")
 );
-const CartComponent = React.lazy(() => import("pages/components/cart"));
+const CartComponent = React.lazy(() => import("features/cart/components/cart"));
 
 export default function Pages() {
-  const [history, setHistory] = useObservable(
-    ajax
-      .getJSON<Record<string, any>>(`${window.location.origin}/data.json`)
-      .pipe(map((response) => response.data.items))
-  );
+  const [history, setHistory] = useObservable(getItems);
 
   return (
     <BrowserRoutes>
