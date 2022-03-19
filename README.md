@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Shopy - a shopping cart list app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Task
+
+- Create a shopping list app that has 3 pages: a landing page, a page for displaying previous shopping list history and a page for adding new items to your shopping list.
+- The landing page should be the default one that should always be a fallback, either when the app is accessed without any page information or when the page specified does not exist.
+- The other 2 pages should be loaded lazily.
+- The second page should display the previous shopping history in a table, using a pipe or pipes for parsing server-side mocked data in a sensible manner.
+- The data should be provided as JSON through an Observable and contain the following information: datetime of purchase, name of product, name of store.
+- In the table, the name of the store should be a link opening the store’s home page in a new tab. The datetime should be displayed in a format similar to “Sunday, February 14th 2020, 15:25”. User should be able to filter the table by all 3 data fields using a form.
+- The last page should display a shopping list, where it is possible to add and remove items dynamically. No server calls necessary.
 
 ## Available Scripts
 
@@ -38,9 +46,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
