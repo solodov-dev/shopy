@@ -17,11 +17,12 @@ const historyTableColumns: ColumnType<ShoppingItem>[] = [
   {
     title: "Date of purchase",
     dataIndex: "purchaseDate",
-    render: (data) => data.purchaseDate.toLocaleDateString(),
+    render: (data) => data.purchaseDate.toLocaleDateString('en-GB', {weekday: 'long', month: 'long', year: 'numeric', day: '2-digit', hour: 'numeric', minute: 'numeric'}),
     form: (setFilter) => (
       <input
         placeholder="Filter by date"
         type="date"
+        style={{opacity: 0.6}}
         onChange={(e) =>
           setFilter((prev) => ({
             ...prev,
@@ -34,7 +35,7 @@ const historyTableColumns: ColumnType<ShoppingItem>[] = [
   {
     title: "Store",
     dataIndex: "store",
-    render: (data) => <a href={data.store}>{data.store}</a>,
+    render: (data) => <a href={data.link} style={{textDecoration: 'underline'}} target="_blank">{data.store}</a>,
     form: (setFilter) => (
       <input
         placeholder="Filter by shop name"

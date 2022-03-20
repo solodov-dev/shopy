@@ -3,4 +3,5 @@ export type ShoppingItem = {
   purchaseDate: Date;
   product: string;
   store: string;
+  link: string;
 };
