@@ -1,15 +1,19 @@
-import styles from "../styles/history.module.scss";
 import historyTableColumns from "../constants/historyTableColumns";
 import DataTable from "ui/components/table";
 import getHistory from "../model/getHistory";
 import useObservable from "utils/hooks/useObservable";
+import PageLayout from "ui/layouts/pageLayout";
+import Loader from "ui/components/loader";
 
 export default function History() {
-  const [history, _] = useObservable(getHistory);
+  const history = useObservable(getHistory);
+
+  if (!history) return <Loader/>
+
   return (
-    <main className={styles.history}>
+    <PageLayout>
       <h1>Shopping history</h1>
-      {history && <DataTable columns={historyTableColumns} data={history} />}
-    </main>
+      <DataTable columns={historyTableColumns} data={history} />
+    </PageLayout>
   );
 }
