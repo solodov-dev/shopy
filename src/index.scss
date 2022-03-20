@@ -18,6 +18,27 @@ a {
   }
 }
 
+button {
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0, 0.30);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
 
 ul {
   margin: 0;
@@ -42,4 +63,5 @@ input {
   --white: #fff;
   --black: darkslategray;
   --gray: #e2e1e1;
+  --yellow: #ffc41f;
 }
