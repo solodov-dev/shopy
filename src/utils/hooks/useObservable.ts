@@ -9,5 +9,5 @@ export default function useObservable<T>(observable: Observable<T>) {
     return () => subscription.unsubscribe();
   }, []);
 
-  return [data, setData];
+  return data;
 }
