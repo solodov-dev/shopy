@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--black);
 }
 
 a {
@@ -39,6 +40,6 @@ input:focus {
   --primary-color: #34c279;
   --secondary-color: #3c8ee2;
   --white: #fff;
-  --black: #000000;
+  --black: darkslategray;
   --gray: #e2e1e1;
 }
