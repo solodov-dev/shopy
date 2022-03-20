@@ -1,7 +1,7 @@
 import { ColumnType } from "ui/components/table";
-import { ShoppingItem } from "../model/types";
+import { PurchasedItem } from "../model/schema";
 
-const historyTableColumns: ColumnType<ShoppingItem>[] = [
+const historyTableColumns: ColumnType<PurchasedItem>[] = [
   {
     title: "Product",
     dataIndex: "product",
