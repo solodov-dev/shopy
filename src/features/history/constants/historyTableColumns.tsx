@@ -35,7 +35,7 @@ const historyTableColumns: ColumnType<ShoppingItem>[] = [
   {
     title: "Store",
     dataIndex: "store",
-    render: (data) => <a href={data.link} style={{textDecoration: 'underline'}} target="_blank">{data.store}</a>,
+    render: (data) => <a href={data.link} rel="noreferrer" style={{textDecoration: 'underline'}} target="_blank">{data.store}</a>,
     form: (setFilter) => (
       <input
         placeholder="Filter by shop name"
