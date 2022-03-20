@@ -26,6 +26,11 @@
   border-bottom: 2px solid var(--primary-color);
 }
 
+.table input {
+  background: transparent;
+  border-bottom: 1px solid lightgreen;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
