@@ -9,7 +9,7 @@ export default function Hero() {
         <h1>Shoppy</h1>
         <p>All your shopping in one place</p>
         <div className={styles.link}>
-          <Link to={Routes.CART}>Go shopping</Link>
+          <Link to={Routes.SHOP}>Go shopping</Link>
         </div>
       </div>
     </section>

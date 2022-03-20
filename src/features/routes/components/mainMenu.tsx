@@ -5,7 +5,7 @@ import styles from "../styles/mainMenu.module.scss";
 const menu = {
   [Routes.HOME]: "home",
   [Routes.HISTORY]: "history",
-  [Routes.CART]: "cart",
+  [Routes.SHOP]: "shop",
 };
 
 export default function MainMenu() {

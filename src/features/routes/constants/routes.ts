@@ -1,7 +1,7 @@
 enum Routes {
   HOME = "/",
   HISTORY = "history",
-  CART = "cart",
+  SHOP = "shop",
 }
 
 export default Routes;
