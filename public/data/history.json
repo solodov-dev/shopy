@@ -1,0 +1,41 @@
+{
+  "data": {
+    "items": [
+      {
+        "id": 1,
+        "purchaseDate": "2022-01-04T13:33:03.969Z",
+        "product": "Chocolate",
+        "store": "Kaubamaja",
+        "link": "https://www.kaubamaja.ee/"
+      },
+      {
+        "id": 2,
+        "purchaseDate": "2022-01-06T13:33:03.969Z",
+        "product": "Milk",
+        "store": "Coop",
+        "link": "https://www.coop.ee/"
+      },
+      {
+        "id": 3,
+        "purchaseDate": "2022-02-04T13:33:03.969Z",
+        "product": "Bread",
+        "store": "Kaubamaja",
+        "link": "https://www.kaubamaja.ee/"
+      },
+      {
+        "id": 4,
+        "purchaseDate": "2022-02-04T13:33:03.969Z",
+        "product": "Eggs",
+        "store": "Coop",
+        "link": "https://www.coop.ee/"
+      },
+      {
+        "id": 5,
+        "purchaseDate": "2022-02-04T13:33:03.969Z",
+        "product": "Beer",
+        "store": "Kaubamaja",
+        "link": "https://www.kaubamaja.ee/"
+      }
+    ]
+  }
+}
