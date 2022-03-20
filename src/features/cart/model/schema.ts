@@ -1,17 +1,19 @@
 import {z} from 'zod';
 
-export type CatalogItem = {
+export type ShoppingList = Record<number, number>;
+
+export type Product = {
   id: number, 
-  product: string,
-  price: string,
+  name: string,
+  price: number,
   image: string,
 }
 
-const catalogItemSchema = z.object({
+const productSchema = z.object({
   id: z.number(),
-  product: z.string(),
-  price: z.string(),
+  name: z.string(),
+  price: z.number(),
   image: z.string()
 })
 
-export { catalogItemSchema }
+export { productSchema }

@@ -1,0 +1,26 @@
+.product {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  display: flex;
+
+  .buttons {
+    margin-left: auto; 
+
+    button {
+      border: none;
+      border-radius: 50%;
+      width: 1.6rem;
+      height: 1.6rem;
+      cursor: pointer;
+      color: red;
+      font-size: 1.3rem;
+      margin-left: 10px;
+
+      :hover {
+        background: var(--gray);
+      }
+    }
+  }
+}

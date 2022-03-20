@@ -1,17 +1,13 @@
-import { catchError, map, of } from "rxjs";
+import { map, Observable } from "rxjs";
 import { ajax } from "rxjs/ajax";
-import { catalogItemSchema } from "./schema";
+import { Product, productSchema } from "./schema";
 
-const getCatalog = ajax
+const getCatalog: Observable<Product[]> = ajax
   .getJSON<Record<string, any>>(`${window.location.origin}/data/catalog.json`)
   .pipe(
     map((response) =>
-      response.data.items.map((item: any) => catalogItemSchema.parse(item))
-    ),
-    catchError((error) => {
-      console.error(error);
-      return of(error);
-    })
+      response.data.items.map((item: any) => productSchema.parse(item))
+    )
   );
 
 export default getCatalog;
