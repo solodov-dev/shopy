@@ -4,7 +4,7 @@ import datesAreEqual from "utils/helpers/datesAreEqual";
 import objectKeys from "utils/helpers/objectKeys";
 import isDate from "utils/typeGuards/isDate";
 import isString from "utils/typeGuards/isString";
-import styles from "../styles/table.module.css";
+import styles from "../styles/table.module.scss";
 
 export type ColumnType<T> = {
   title: string;
@@ -52,16 +52,15 @@ export default function DataTable<T>(props: {
   );
 }
 
-
 function filterTable<T>(rowData: T, tableFilter: TableFilter<T>) {
   for (const key of objectKeys(tableFilter)) {
     const filter = tableFilter[key];
     const value = rowData[key];
     if (filter) {
-      if (isString(value) && !new RegExp(filter, "i").test(value)) return; 
-      if (isDate(value) && isDate(filter) && !datesAreEqual(value, filter)) return;
+      if (isString(value) && !new RegExp(filter, "i").test(value)) return;
+      if (isDate(value) && isDate(filter) && !datesAreEqual(value, filter))
+        return;
     }
   }
   return rowData;
 }
-

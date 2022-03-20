@@ -1,4 +1,4 @@
-import styles from "../styles/history.module.css";
+import styles from "../styles/history.module.scss";
 import historyTableColumns from "../constants/historyTableColumns";
 import DataTable from "ui/components/table";
 import getHistory from "../model/getHistory";
@@ -9,9 +9,7 @@ export default function History() {
   return (
     <main className={styles.history}>
       <h1>Shopping history</h1>
-      {history && (
-        <DataTable columns={historyTableColumns} data={history} />
-      )}
+      {history && <DataTable columns={historyTableColumns} data={history} />}
     </main>
   );
 }

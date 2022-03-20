@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../styles/partners.module.css";
+import styles from "../styles/partners.module.scss";
 import shopify from "ui/assets/shopify.svg";
 import kaub from "ui/assets/kaub.svg";
 import coop from "ui/assets/coop.svg";

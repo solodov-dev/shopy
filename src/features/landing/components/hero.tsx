@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../styles/hero.module.css";
+import styles from "../styles/hero.module.scss";
 import Routes from "features/routes/constants/routes";
 import { Link } from "react-router-dom";
 

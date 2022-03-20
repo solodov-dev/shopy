@@ -1,0 +1,37 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  overflow: hidden;
+
+  thead tr {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+
+  th,
+  td {
+    padding: 1rem;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  input {
+    background: transparent;
+    border-bottom: 1px solid lightgreen;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}

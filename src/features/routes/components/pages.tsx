@@ -7,7 +7,6 @@ const HistoryComponent = React.lazy(() => import("features/history/components/hi
 const CartComponent = React.lazy(() => import("features/cart/components/cart"));
 
 export default function Pages() {
-
   return (
     <BrowserRoutes>
       <Route path={Routes.HOME} element={<Home />} />

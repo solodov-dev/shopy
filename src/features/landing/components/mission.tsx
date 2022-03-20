@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../styles/mission.module.css";
+import styles from "../styles/mission.module.scss";
 
 export default function Mission() {
   return (

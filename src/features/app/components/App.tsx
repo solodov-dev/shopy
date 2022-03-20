@@ -1,10 +1,10 @@
 import MainMenu from "features/routes/components/mainMenu";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "ui/components/header";
-import "../styles/App.css";
 import Logo from "ui/components/logo";
 import Pages from "features/routes/components/pages";
+import Loader from "ui/components/loader";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Logo />
         <MainMenu />
       </Header>
-      <Suspense fallback="fallback">
+      <Suspense fallback={<Loader/>}>
         <Pages />
       </Suspense>
     </Router>

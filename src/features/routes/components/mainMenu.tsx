@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Routes from "../constants/routes";
-import styles from "../styles/mainMenu.module.css";
+import styles from "../styles/mainMenu.module.scss";
 
 const menu = {
   [Routes.HOME]: "home",
