@@ -1,13 +1,16 @@
 import styles from "../styles/history.module.css";
 import historyTableColumns from "../constants/historyTableColumns";
 import DataTable from "ui/components/table";
-import { ShoppingItem } from "../model/types";
+import getHistory from "../model/getHistory";
+import useObservable from "utils/hooks/useObservable";
 
-export default function History(props: { history: ShoppingItem[] }) {
+export default function History() {
+  const [history, _] = useObservable(getHistory);
   return (
     <main className={styles.history}>
-      {props.history && (
-        <DataTable columns={historyTableColumns} data={props.history} />
+      <h1>Shopping history</h1>
+      {history && (
+        <DataTable columns={historyTableColumns} data={history} />
       )}
     </main>
   );
