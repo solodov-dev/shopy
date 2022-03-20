@@ -3,32 +3,32 @@
     "items": [
       {
         "id": 1,
-        "product": "Banana",
-        "price": "1.25",
+        "name": "Banana",
+        "price": 125,
         "image": "https://ecoop.ee/assets/img/data/1/products/12617021-banaan-1647738317218.jpg"
       },
       {
         "id": 2,
-        "product": "Milk",
-        "price": "1.09",
+        "name": "Milk",
+        "price": 109,
         "image": "https://ecoop.ee/assets/img/data/1/products/12775555-alma-piim-25-15l-1647738315582.jpg"
       },
       {
         "id": 3,
-        "product": "Cucumber",
-        "price": "4.79",
+        "name": "Cucumber",
+        "price": 479,
         "image": "https://ecoop.ee/assets/img/data/1/products/12412977-varske-kurk-luhike-1647738407427.jpg"
       },
       {
         "id": 4,
-        "product": "Eggs",
-        "price": "1.05",
+        "name": "Eggs",
+        "price": 105,
         "image": "https://ecoop.ee/assets/img/data/1/products/21035444-saastu-kanamunad-m-10tk-1647738503450.jpg"
       },
       {
         "id": 5,
-        "product": "Beer",
-        "price": "0.79",
+        "name": "Beer",
+        "price": 79,
         "image": "https://ecoop.ee/assets/img/data/1/products/22837547-karlovske-zlato-hele-olu-45-05l-1647738560343.jpg"
       }
     ]
