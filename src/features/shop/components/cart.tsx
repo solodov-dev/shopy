@@ -11,7 +11,7 @@ export default function Cart(props: {
   products: Product[];
   setShoppingList: SetShoppingList;
 }) {
-  const productsByIds: Record<number, Product> = useMemo(
+  const productsByIds: Record<string, Product> = useMemo(
     () =>
       props.products.reduce((obj, item) => ({ ...obj, [item.id]: item }), {}),
     [props.products]
@@ -24,7 +24,7 @@ export default function Cart(props: {
           (total += props.children[key] * productsByIds[key].price),
         0
       ),
-    [props.children]
+    [props.children, productsByIds]
   );
 
   return (

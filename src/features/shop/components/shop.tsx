@@ -7,7 +7,9 @@ import { ShoppingList } from "../model/schema";
 import Cart from "./cart";
 import Catalog from "./catalog";
 
-export type SetShoppingList = React.Dispatch<React.SetStateAction<ShoppingList>>;
+export type SetShoppingList = React.Dispatch<
+  React.SetStateAction<ShoppingList>
+>;
 
 export default function Shop() {
   const products = useObservable(getCatalog);
@@ -16,12 +18,11 @@ export default function Shop() {
   if (!products) return <Loader />;
 
   return (
-      <ShopLayout>
-        <Cart products={products} setShoppingList={setShoppingList}>
-          {shoppingList}
-        </Cart>
-        <Catalog setShoppingList={setShoppingList}>{products}</Catalog>
-      </ShopLayout>
+    <ShopLayout>
+      <Cart products={products} setShoppingList={setShoppingList}>
+        {shoppingList}
+      </Cart>
+      <Catalog setShoppingList={setShoppingList}>{products}</Catalog>
+    </ShopLayout>
   );
 }
-
