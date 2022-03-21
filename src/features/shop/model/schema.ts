@@ -7,6 +7,8 @@ export type Product = {
   name: string;
   price: number;
   image: string;
+  store: string;
+  link: string;
 };
 
 const productSchema = z.object({
@@ -14,6 +16,8 @@ const productSchema = z.object({
   name: z.string(),
   price: z.number(),
   image: z.string(),
+  store: z.string(),
+  link: z.string(),
 });
 
 export { productSchema };

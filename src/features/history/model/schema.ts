@@ -3,7 +3,7 @@ import { z } from "zod";
 export type PurchasedItem = {
   id: string;
   purchaseDate: Date;
-  product: string;
+  name: string;
   store: string;
   link: string;
 };
@@ -13,7 +13,7 @@ const purchasedItemShema = z.object({
   purchaseDate: z.preprocess((arg) => {
     if (typeof arg === "string" || arg instanceof Date) return new Date(arg);
   }, z.date()),
-  product: z.string(),
+  name: z.string(),
   store: z.string(),
   link: z.string(),
 });
