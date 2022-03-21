@@ -5,7 +5,7 @@ import styles from "../styles/productCard.module.scss";
 
 export default function ProductCard(props: {
   children: Product;
-  addItem: (id: number) => void;
+  addItem: (id: string) => void;
 }) {
   return (
     <div className={styles.card}>
@@ -20,4 +20,3 @@ export default function ProductCard(props: {
     </div>
   );
 }
-
