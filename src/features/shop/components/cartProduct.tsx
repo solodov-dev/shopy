@@ -1,6 +1,7 @@
 import { Product } from "../model/schema";
-import { SetShoppingList } from "./shop";
 import styles from "../styles/cartProduct.module.scss";
+import deleteKey from "utils/helpers/deleteKey";
+import { SetShoppingList } from "features/routes/components/pages";
 
 export default function CartProduct(props: {
   children: Product;
@@ -17,15 +18,17 @@ export default function CartProduct(props: {
       <div className={styles.buttons}>
         <button
           onClick={() =>
-            props.setShoppingList((prev) => ({ ...prev, [id]: prev[id] - 1 }))
+            props.setShoppingList((prev) =>
+              prev[id] === 1
+                ? deleteKey(prev, id)
+                : { ...prev, [id]: prev[id] - 1 }
+            )
           }
         >
           -
         </button>
         <button
-          onClick={() =>
-            props.setShoppingList((prev) => ({ ...prev, [id]: 0 }))
-          }
+          onClick={() => props.setShoppingList((prev) => deleteKey(prev, id))}
         >
           &times;
         </button>

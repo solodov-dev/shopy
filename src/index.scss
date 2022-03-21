@@ -20,11 +20,16 @@ a {
 
 button {
   &:hover {
-    box-shadow: 0 0 10px rgba(0,0,0, 0.30);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
   &:active {
     transform: translateY(1px);
+  }
+
+  &:disabled {
+    background: var(--gray);
+    pointer-events: none;
   }
 }
 
@@ -55,7 +60,6 @@ input {
     border-bottom: 1px solid var(--secondary-color);
   }
 }
-
 
 :root {
   --primary-color: #34c279;

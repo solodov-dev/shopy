@@ -1,7 +1,7 @@
-import React, { HTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import styles from "../styles/button.module.scss";
 
-export default function Button(props: HTMLAttributes<HTMLButtonElement>) {
+export default function Button(props: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button {...props} className={styles.button}>
       {props.children}

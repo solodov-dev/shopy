@@ -5,31 +5,41 @@
         "id": "1as",
         "name": "Banana",
         "price": 125,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Banana.png/196px-Banana.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Banana.png/196px-Banana.png",
+        "store": "Coop",
+        "link": "https://www.coop.ee/"
       },
       {
         "id": "2glkj",
         "name": "Apple",
         "price": 109,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Apple_in_lightbox.png/240px-Apple_in_lightbox.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Apple_in_lightbox.png/240px-Apple_in_lightbox.png",
+        "store": "Kaubamaja",
+        "link": "https://www.kaubamaja.ee/"
       },
       {
         "id": "3asdi",
         "name": "Watermelon",
         "price": 479,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Piece_of_watermelon.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Piece_of_watermelon.png",
+        "store": "Coop",
+        "link": "https://www.coop.ee/"
       },
       {
         "id": "4asdfj",
         "name": "Lemon",
         "price": 105,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lemon03.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lemon03.jpg",
+        "store": "Kaubamaja",
+        "link": "https://www.kaubamaja.ee/"
       },
       {
         "id": "5aghk",
         "name": "Beer",
         "price": 79,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Gorkha_Strong_Beer_Bottle.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Gorkha_Strong_Beer_Bottle.png",
+        "store": "Coop",
+        "link": "https://www.coop.ee/"
       }
     ]
   }
