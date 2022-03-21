@@ -1,4 +1,5 @@
 import { ColumnType } from "ui/components/table";
+import formatDate from "utils/helpers/formatDate";
 import { PurchasedItem } from "../model/schema";
 
 const historyTableColumns: ColumnType<PurchasedItem>[] = [
@@ -9,7 +10,7 @@ const historyTableColumns: ColumnType<PurchasedItem>[] = [
       <input
         placeholder="Filter by name"
         onChange={(e) =>
-          setFilter((prev) => ({ ...prev, product: e.target.value }))
+          setFilter((prev) => ({ ...prev, name: e.target.value }))
         }
       />
     ),
@@ -17,15 +18,7 @@ const historyTableColumns: ColumnType<PurchasedItem>[] = [
   {
     title: "Date of purchase",
     dataIndex: "purchaseDate",
-    render: (data) =>
-      data.purchaseDate.toLocaleDateString("en-GB", {
-        weekday: "long",
-        month: "long",
-        year: "numeric",
-        day: "2-digit",
-        hour: "numeric",
-        minute: "numeric",
-      }),
+    render: (data) => formatDate(data.purchaseDate),
     form: (setFilter) => (
       <input
         placeholder="Filter by date"
