@@ -10,6 +10,10 @@
 - In the table, the name of the store should be a link opening the store’s home page in a new tab. The datetime should be displayed in a format similar to “Sunday, February 14th 2020, 15:25”. User should be able to filter the table by all 3 data fields using a form.
 - The last page should display a shopping list, where it is possible to add and remove items dynamically. No server calls necessary.
 
+## Online
+
+Online app [here](https://gallant-hoover-36d360.netlify.app/).
+
 ## Available Scripts
 
 In the project directory, you can run:
